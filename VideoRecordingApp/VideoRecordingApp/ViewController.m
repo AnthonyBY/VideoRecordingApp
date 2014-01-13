@@ -63,6 +63,17 @@
 }
 - (IBAction)playButtonPressed {
     
+    self.movieController = [[MPMoviePlayerController alloc] init];
+    
+    [self.movieController setContentURL:self.movieURL];
+    [self.movieController.view setFrame:self.imageView.frame];
+    [self.view addSubview:self.movieController.view];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(moviePlayBackDidFinish:)
+                                                 name:MPMoviePlayerPlaybackDidFinishNotification
+                                               object:self.movieController];
+    
     [self.movieController play];
 }
 
