@@ -112,8 +112,6 @@
 		F309157E188485620098C897 /* VideoRecordingApp */ = {
 			isa = PBXGroup;
 			children = (
-				F3091587188485620098C897 /* AppDelegate.h */,
-				F3091588188485620098C897 /* AppDelegate.m */,
 				F309158A188485620098C897 /* Main.storyboard */,
 				F309158D188485620098C897 /* ViewController.h */,
 				F309158E188485620098C897 /* ViewController.m */,
@@ -126,6 +124,8 @@
 		F309157F188485620098C897 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F3091587188485620098C897 /* AppDelegate.h */,
+				F3091588188485620098C897 /* AppDelegate.m */,
 				F3091580188485620098C897 /* VideoRecordingApp-Info.plist */,
 				F3091581188485620098C897 /* InfoPlist.strings */,
 				F3091584188485620098C897 /* main.m */,
